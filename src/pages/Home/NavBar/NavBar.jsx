@@ -14,7 +14,7 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-300 shadow-sm px-10 py-5 rounded-2xl mt-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const NavBar = () => {
         <a className="btn btn-ghost text-xl"><Logo></Logo></a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navBarLinks}</ul>
+        <ul className="menu menu-horizontal px-1 text-xl">{navBarLinks}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>
