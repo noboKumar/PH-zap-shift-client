@@ -4,6 +4,7 @@ import HowItWorks from "../../components/Home/HowItWorks/HowItWorks";
 import OurServices from "../../components/Home/OurServices/OurServices";
 import SalesTeam from "../../components/Home/SalesTeam/SalesTeam";
 import SupportFeatures from "../../components/Home/SupportFeatures/SupportFeatures";
+import BecomeMerchant from "../../components/Home/BecomeMerchant/BecomeMerchant";
 const Home = () => {
   return (
     <div className="space-y-20">
@@ -12,6 +13,7 @@ const Home = () => {
       <OurServices></OurServices>
       <SalesTeam></SalesTeam>
       <SupportFeatures></SupportFeatures>
+      <BecomeMerchant></BecomeMerchant>
     </div>
   );
 };
