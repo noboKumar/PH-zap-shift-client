@@ -5,6 +5,7 @@ import OurServices from "../../components/Home/OurServices/OurServices";
 import SalesTeam from "../../components/Home/SalesTeam/SalesTeam";
 import SupportFeatures from "../../components/Home/SupportFeatures/SupportFeatures";
 import BecomeMerchant from "../../components/Home/BecomeMerchant/BecomeMerchant";
+import Testimonial from "../../components/Home/Testimonial/Testimonial";
 const Home = () => {
   return (
     <div className="space-y-20">
@@ -14,6 +15,7 @@ const Home = () => {
       <SalesTeam></SalesTeam>
       <SupportFeatures></SupportFeatures>
       <BecomeMerchant></BecomeMerchant>
+      <Testimonial></Testimonial>
     </div>
   );
 };
