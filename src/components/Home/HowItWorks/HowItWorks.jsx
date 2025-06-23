@@ -4,9 +4,13 @@ import { TbTruckDelivery } from "react-icons/tb";
 import HeadTitle from "../../Shared/HeadTitle";
 import { FaBriefcase, FaHandHoldingUsd, FaWarehouse } from "react-icons/fa";
 
+
 const HowItWorks = () => {
   return (
-    <div className="w-10/12 mx-auto space-y-4">
+    <div
+      data-aos="fade-up"
+      className="w-10/12 mx-auto space-y-4"
+    >
       <HeadTitle title={"How it Works"}></HeadTitle>
       <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <HowItWorksCard

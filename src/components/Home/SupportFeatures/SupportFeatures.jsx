@@ -7,7 +7,7 @@ import SupportImg from "../../../assets/safe-delivery.png";
 
 const SupportFeatures = () => {
   return (
-    <div className="space-y-6 w-10/12 mx-auto">
+    <div data-aos="fade-up" className="space-y-6 w-10/12 mx-auto">
       <SupportFeaturesCard
         image={TrackingImg}
         title="Live Parcel Tracking"

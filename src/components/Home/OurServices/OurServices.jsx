@@ -11,7 +11,10 @@ import {
 
 const OurServices = () => {
   return (
-    <div className="bg-[#03373D] py-24 text-center space-y-5 text-white rounded-2xl">
+    <div
+      data-aos="fade-up"
+      className="bg-[#03373D] py-24 text-center space-y-5 text-white rounded-2xl"
+    >
       <div className="space-y-5">
         <h1 className="text-4xl font-bold">Our Services</h1>
         <p className="w-1/2 mx-auto">

@@ -18,7 +18,7 @@ const SalesTeam = () => {
     salesIcon7,
   ];
   return (
-    <div className="space-y-8 w-10/12 mx-auto">
+    <div data-aos="fade-up" className="space-y-8 w-10/12 mx-auto">
       <div className="text-center">
         <HeadTitle title={"We've helped thousands of sales teams"}></HeadTitle>
       </div>

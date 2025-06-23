@@ -33,7 +33,7 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="flex flex-col items-center space-y-4">
         <div>
           <img src={testimonialImg} alt="icon img" />
