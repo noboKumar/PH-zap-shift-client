@@ -2,6 +2,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #CAEB66;
+  --color-secondary: #03373D;
+  --color-accent: #606060;
+}
+
 .urbanist-font {
   font-family: "Urbanist", sans-serif;
+}
+
+.active{
+  @apply bg-primary 
 }

@@ -3,7 +3,7 @@ import locationImg from "../../../assets/location-merchant.png";
 
 const BecomeMerchant = () => {
   return (
-    <div data-aos="fade-up" className="flex items-center justify-center bg-[url(assets/be-a-merchant-bg.png)] bg-no-repeat bg-[#03373D] rounded-2xl text-white px-20 py-10 w-10/12 mx-auto">
+    <div data-aos="fade-up" className="flex items-center justify-center bg-[url(assets/be-a-merchant-bg.png)] bg-no-repeat bg-secondary rounded-2xl text-white px-20 py-10 w-10/12 mx-auto">
       <div className="flex-1 space-y-4">
         <h1 className="text-4xl font-bold">
           Merchant and Customer Satisfaction is Our First Priority
@@ -14,8 +14,8 @@ const BecomeMerchant = () => {
           in every corner of Bangladesh right on time.
         </p>
         <div className="space-x-5">
-          <button className="btn btn-primary">Become a Merchant</button>
-          <button className="btn btn-outline">
+          <button className="btn btn-primary text-black">Become a Merchant</button>
+          <button className="btn btn-outline border-primary text-primary hover:bg-transparent">
             Earn with zap shift Courier
           </button>
         </div>
