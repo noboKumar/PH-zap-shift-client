@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const Logo = () => {
   return (
     <Link to={"/"}>
-      <div className="flex items-end">
+      <div className="flex items-end w-fit">
         <img src={logo} alt="logo" />
         <h1 className="text-2xl font-extrabold -ml-3">Zap Shift</h1>
       </div>
