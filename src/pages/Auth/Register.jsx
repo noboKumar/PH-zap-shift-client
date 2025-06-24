@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router";
 import authImg from "../../assets/authImage.png";
 import Logo from "../../components/Shared/Logo";
+import { Link } from "react-router";
 
-const SignIn = () => {
+const Register = () => {
   return (
     <div>
       <Logo></Logo>
@@ -11,8 +11,8 @@ const SignIn = () => {
         {/* left side */}
         <div className="w-1/2 flex flex-col justify-center items-center">
           <div>
-            <h1 className="text-4xl font-bold">Welcome Back</h1>
-            <p>Login With zap shift</p>
+            <h1 className="text-4xl font-bold">Create an Account</h1>
+            <p>Register With zap shift</p>
           </div>
           <form>
             <fieldset className="fieldset w-lg px-5">
@@ -34,13 +34,11 @@ const SignIn = () => {
                 <a className="link link-hover">Forgot password?</a>
               </div>
 
-              <button className="btn btn-primary text-black mt-4">
-                Login
-              </button>
+              <button className="btn btn-primary text-black mt-4">Register</button>
               <div>
                 <p className="text-lg">
-                  Don't have any account?{" "}
-                  <Link to={"/register"} className="link link-hover text-[#8FA748]">
+                  Already Have an account?{" "}
+                  <Link to={"/signIn"} className="link link-hover text-[#8FA748]">
                     Register
                   </Link>
                 </p>
@@ -90,4 +88,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Register;
