@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import authImg from "../../assets/authImage.png";
 import Logo from "../../components/Shared/Logo";
 
-const SignIn = () => {
+const LogIn = () => {
   return (
     <div>
       <Logo></Logo>
@@ -90,4 +90,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default LogIn;

@@ -2,8 +2,27 @@ import React from "react";
 import authImg from "../../assets/authImage.png";
 import Logo from "../../components/Shared/Logo";
 import { Link } from "react-router";
+import useAuth from "../../hooks/useAuth";
+import { useForm } from "react-hook-form";
 
 const Register = () => {
+  const { createUser } = useAuth();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    createUser(data.email, data.password)
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
   return (
     <div>
       <Logo></Logo>
@@ -14,13 +33,14 @@ const Register = () => {
             <h1 className="text-4xl font-bold">Create an Account</h1>
             <p>Register With zap shift</p>
           </div>
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <fieldset className="fieldset w-lg px-5">
               <label className="label">Email</label>
               <input
                 type="email"
                 className="input w-full"
                 placeholder="Email"
+                {...register("email", { required: true })}
               />
 
               <label className="label">Password</label>
@@ -28,17 +48,29 @@ const Register = () => {
                 type="password"
                 className="input w-full"
                 placeholder="Password"
+                {...register("password", { required: true, minLength: 8 })}
               />
+              {errors.password?.type === "required" && (
+                <p>password is required</p>
+              )}
+              {errors.password?.type === "minLength" && (
+                <P>password must be 8 character or longer</P>
+              )}
 
               <div>
                 <a className="link link-hover">Forgot password?</a>
               </div>
 
-              <button className="btn btn-primary text-black mt-4">Register</button>
+              <button className="btn btn-primary text-black mt-4">
+                Register
+              </button>
               <div>
                 <p className="text-lg">
                   Already Have an account?{" "}
-                  <Link to={"/signIn"} className="link link-hover text-[#8FA748]">
+                  <Link
+                    to={"/signIn"}
+                    className="link link-hover text-[#8FA748]"
+                  >
                     Register
                   </Link>
                 </p>

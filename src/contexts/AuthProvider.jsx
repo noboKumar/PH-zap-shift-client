@@ -46,7 +46,7 @@ const AuthProvider = ({ children }) => {
       unSubscribe();
     };
   }, []);
-  const userInfo = {
+  const authInfo = {
     user,
     loading,
     createUser,
@@ -54,7 +54,7 @@ const AuthProvider = ({ children }) => {
     signInWithGoogle,
     logOut,
   };
-  return <AuthContext value={userInfo}>{children}</AuthContext>;
+  return <AuthContext value={authInfo}>{children}</AuthContext>;
 };
 
 export default AuthProvider;
